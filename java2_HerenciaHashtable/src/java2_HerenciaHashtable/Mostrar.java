@@ -1,4 +1,4 @@
-
+package java2_HerenciaHashtable;
 
 import java.util.Scanner;
 import java.util.Hashtable;
