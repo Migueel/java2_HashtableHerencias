@@ -1,4 +1,4 @@
-
+package java2_HerenciaHashtable;
 
 public class Piso extends Vivienda {
 	protected int planta;
