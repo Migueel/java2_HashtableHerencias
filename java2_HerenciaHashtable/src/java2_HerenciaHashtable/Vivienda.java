@@ -1,4 +1,4 @@
-
+package java2_HerenciaHashtable;
 
 public abstract class Vivienda {
 	protected int tamano;
