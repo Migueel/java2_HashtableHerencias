@@ -1,4 +1,4 @@
-package java2_HerenciaHashtable;
+
 
 import java.util.Scanner;
 import java.util.Hashtable;
@@ -7,32 +7,36 @@ import java.util.Hashtable;
 public class Mostrar {
 
 	public static void main(String[] args) {
+		int tamano = 0;
+		int num  = 0;
+		int planta = 0;
+		char letra = 'a';
 		
-		Piso piso = new Piso();
+		Piso piso = new Piso(tamano, num, planta, letra);
 		Scanner sc = new Scanner(System.in);
 		Hashtable<String, Comparable> inf = new Hashtable<String, Comparable>();
 		
 		System.out.println("Introduce los siguientes datos del piso: ");
 		System.out.println("Portal:");
-		piso.setNum(sc.nextInt());
+		num = sc.nextInt();
 		System.out.println("Planta:");
-		piso.setPlanta(sc.nextInt());
+		planta = sc.nextInt();
 		System.out.println("Letra:");
-		piso.setLetra(sc.next().charAt(0));
-		System.out.println("Tama�o:");
-		piso.setTamano(sc.nextInt());
+	   	letra = sc.next().charAt(0);
+		System.out.println("Tamaño:");
+		tamano = sc.nextInt();
 		
-		inf.put("portal", piso.getNum());
-		inf.put("planta", piso.getPlanta());
-		inf.put("letra", piso.getLetra());
-		inf.put("tama�o", piso.getTamano());
+		inf.put("portal", num);
+		inf.put("planta", planta);
+		inf.put("letra", letra);
+		inf.put("tamaño", tamano);
 		
 		System.out.println("DATOS DEL PISO");
 		System.out.println("----------------");
-		System.out.println("Portal: " +inf.get("num"));
+		System.out.println("Portal: " +inf.get("portal"));
 		System.out.println("Planta: " +inf.get("planta"));
 		System.out.println("Letra: " +inf.get("letra"));
-		System.out.println("Tama�o: " +inf.get("tamano") + "m2");
+		System.out.println("Tamaño: " +inf.get("tamaño") + " m2");
 		
 	}
 

@@ -1,11 +1,16 @@
-package java2_HerenciaHashtable;
 
-public class Piso extends Vivienda{
-	int planta;
-	char letra;
+
+public class Piso extends Vivienda {
+	protected int planta;
+	protected char letra;
 	
 	public Piso(){
 		super();
+	}
+	public Piso(int tamano, int num, int planta, char letra){
+		super();
+		this.planta = planta;
+		this.letra = letra;
 	}
 	
 	public int getPlanta() {

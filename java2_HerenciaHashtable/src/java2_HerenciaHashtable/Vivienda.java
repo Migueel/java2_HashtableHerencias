@@ -1,11 +1,15 @@
-package java2_HerenciaHashtable;
+
 
 public abstract class Vivienda {
-	int tamano;
-	int num;
+	protected int tamano;
+	protected int num;
 
 	public Vivienda(){
-		
+
+	}
+	public Vivienda(int tamano, int num){
+		this.tamano = tamano;
+		this.num = num;
 	}
 
 	public int getTamano() {
